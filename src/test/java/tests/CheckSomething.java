@@ -12,6 +12,6 @@ public class CheckSomething {
     void checkSomething() {
         open("https://www.google.com/");
         $("[name='q']").setValue("Krakow").pressEnter();
+        $("#rso").shouldHave(text("Wikipedia"));
     }
-
 }
